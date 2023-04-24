@@ -1,6 +1,6 @@
 import image1 from '../components/assets/post-1.jpg'
-import image1 from '../components/assets/post-2.jpg'
-import image1 from '../components/assets/post-3.jpg'
+import image2 from '../components/assets/post-2.jpg'
+import image3 from '../components/assets/post-3.jpg'
 
 const posts = [
     {
@@ -23,7 +23,8 @@ const posts = [
       title: 'Mauris ac lacus convallis3',
       description: 'Aliquam viverra nibh faucibus augue rhoncus, vel varius sapien ornare. Proin in viverra libero, id finibus ex.',
       action: 'Peça já'
-    }
+    },
+   
   ];
   
 

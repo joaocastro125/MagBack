@@ -27,7 +27,7 @@ function creditCard() {
               <IconText icon={faCreditCard}>Crédito pessoal</IconText>
             </Col>
             <Col xs={12} lg={6} className='mb-4'>
-              <IconText   icon={faShoppingCart}   color="red">Pagamentos Online</IconText>
+              <IconText   icon={faShoppingCart}   color='#f05656;'>Pagamentos Online</IconText>
             </Col>
             <Col xs={12} lg={6} className='mb-4'>
               <IconText icon={faMobile}>APP</IconText>
@@ -58,23 +58,4 @@ export default creditCard;
 
 
 
-      //
-      //   <Row>
-      //     <Col xs={12} lg={7} className='mb-5 mb-lg-0 px-5 px-lg-0'>Cartão de Credito</Col>
-
-      //     <Col >
-      //       <Image src={credit} />
-      //     </Col>
-      //   </Row>
-        
-      //   <Row>
-      //     <Col className='my-5'>Credito Pessoal</Col>
-      //     <Col>Pagamento Oline</Col>
-      //   </Row>
-      //   <Row>
-      //     <Col>App</Col>
-      //     <Col>Carteira Digital</Col>
-      //   </Row>
-
-
-     
+      
