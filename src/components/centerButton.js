@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 const CenteredButton = ({ children }) => (
   <Container>
-    <Row className="d-flex justify-content-center">
+    <Row sm={4} className="d-flex justify-content-center">
       <Button className="my-5 px-5 py-3" variant="success" size="lg">
         { children }
       </Button>
