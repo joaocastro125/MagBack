@@ -23,17 +23,17 @@ function creditCard() {
           </Row>
 
           <Row>
-            <Col xs={12} lg={6} className='mb-4'>
-              <IconText icon={faCreditCard}>Crédito pessoal</IconText>
+            <Col xs={12} lg={6} className='mb-4'  >
+              <IconText icon={faCreditCard} color='red'>Crédito pessoal</IconText>
             </Col>
             <Col xs={12} lg={6} className='mb-4'>
-              <IconText   icon={faShoppingCart}   color='#f05656;'>Pagamentos Online</IconText>
+              <IconText   icon={faShoppingCart}   color='red'>Pagamentos Online</IconText>
             </Col>
             <Col xs={12} lg={6} className='mb-4'>
-              <IconText icon={faMobile}>APP</IconText>
+              <IconText icon={faMobile} color='red'>APP</IconText>
             </Col>
             <Col xs={12} lg={6} className='mb-4'>
-              <IconText icon={faWallet}>Carteira Digital</IconText>
+              <IconText icon={faWallet} color='red'>Carteira Digital</IconText>
             </Col>
           </Row>
         </Col>

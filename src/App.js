@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation handleCreateAccount={setshowModal} />
+      <Navigation handleCreateAccount={()=>setshowModal(true)}/>
       <Hero />
       <Card />
       <CardList posts={posts} />
@@ -27,7 +27,7 @@ function App() {
         Abra sua conta
       </CenteredButton>
       <Institucional />
-      <AcountModal show={showModal} />
+      <AcountModal show={showModal}  handleClose={()=>setshowModal(false)}/>
 
 
     </div>
