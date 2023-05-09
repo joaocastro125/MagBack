@@ -43,12 +43,6 @@ function creditCard() {
         </Col>
       </Row>
     </Container>
-
-    
-
-
-   
-
 </>
   )
 }

@@ -12,9 +12,6 @@ import {
   import IconText from './IconText';
 
   import '../components/Institucional.scss'  
-
-
-
 const Institucional=()=>{
     return (
         <section className="institucional text-light py-5">
@@ -24,7 +21,6 @@ const Institucional=()=>{
 
              <Col xs={12} lg={7}>
 
-              
                 <h2 className='institutional-title my-5'>Já nascemos digital</h2>
                     <p className='mb-5'>
                     Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
