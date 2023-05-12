@@ -1,47 +1,51 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Accordion from 'react-bootstrap/Accordion';
 import { faCreditCard, faShieldAlt, faUserTie, faWallet } from '@fortawesome/free-solid-svg-icons';
+
 import IconText from './IconText';
-import { useState } from 'react';
-import './Faq.scss'
-const Faq=()=>{
-    const [index , setIndex]=useState(0)
-    const handleClick=(key)=>{
-        setIndex(key)
-    }
-    const options=[
-        { icon: faCreditCard, text: 'Cartão de crédito e débito' },
-        { icon: faWallet, text: 'Conta e abertura' },
-        { icon: faShieldAlt, text: 'Token digital' },
-        { icon: faUserTie, text: 'Produtos e serviços' },
-    ]
-   return(
+import './Faq.scss';
+
+const Faq = () => {
+  const [index, setIndex] = useState(0);
+  const handleClick = (key) => {
+    setIndex(key);
+  }
+
+  const options = [
+    { icon: faCreditCard, text: 'Cartão de crédito e débito' },
+    { icon: faWallet, text: 'Conta e abertura' },
+    { icon: faShieldAlt, text: 'Token digital' },
+    { icon: faUserTie, text: 'Produtos e serviços' },
+  ];
+
+  return (
     <section className='faq text-light'>
-    <Container className='py-5'>
-    <Row className='justify-content-center'>
-    <h2 className='faq-title my-5'>Dúvidas frequentes</h2>
+      <Container className='py-5'>
+        <Row className='justify-content-center'>
+          <h2 className='faq-title my-5'>Dúvidas frequentes</h2>
+        </Row>
 
-    </Row>
-
-   <Row>
-
-    <Col>
-    {options.map(({ icon, text }, key) => (
-              <IconText icon={icon} size={3} textClassName='lead' className='faq-clickable mb-3' color={key===index?'#fff':'#bbb'}
-              click={()=>handleClick(key)}
-
-              key={key}
+        <Row>
+          <Col xs={12} lg={6}>
+            {options.map(({ icon, text }, key) => (
+              <IconText
+                icon={icon}
+                size={3}
+                className="faq-clickable mb-3"
+                textClassName="lead"
+                color={key === index ? '#fff' : '#bbb'}
+                onClick={() => handleClick(key)}
+                key={key}
               >
-
-              {text}
-              
-
+                {text}
               </IconText>
             ))}
-            </Col>
-            <Col>
+          </Col>
+
+          <Col xs={12} lg={6}>
             <Accordion defaultActiveKey="0" activeKey={`${index}`} className='faq-accordion'>
               <Accordion.Item eventKey="0">
                 <Accordion.Header onClick={() => handleClick(0)}>Cartão de crédito e débito</Accordion.Header>
@@ -93,15 +97,12 @@ const Faq=()=>{
                   culpa qui officia deserunt mollit anim id est laborum.
                 </Accordion.Body>
               </Accordion.Item>
-      
-    </Accordion>        
-    </Col>
-    </Row>
-    </Container>
+            </Accordion>
+          </Col>
+        </Row>
+      </Container>
     </section>
-    
-   )
+  )
 }
 
-
-export default Faq
+export default Faq;
