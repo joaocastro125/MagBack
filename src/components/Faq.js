@@ -99,7 +99,7 @@ const Faq = () => {
               </Accordion.Item>
             </Accordion>
           </Col>
-        </Row>
+        </Row>J
       </Container>
     </section>
   )

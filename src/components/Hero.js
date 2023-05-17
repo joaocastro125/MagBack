@@ -10,7 +10,7 @@ import Creadit from './assets/credit-card.jpg'
 import './Hero.scss';
 
 
-const Hero = () => {
+const Hero = ({onClick}) => {
   return (
     <>
     <Card className="text-center text-light hero">
@@ -22,7 +22,7 @@ const Hero = () => {
 
           <Col lg className="text-lg-start my-5">
             <p>Pague suas contas pelo nosso APP</p>
-            <Button variant="outline-light">Abra sua conta</Button>
+            <Button variant="outline-light" onClick={onClick}>Abra sua conta</Button>
           </Col>
         </Row>
       </Container>
