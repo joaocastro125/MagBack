@@ -12,16 +12,15 @@ import posts from '../data/Posts';
 
 
 
-const Home = () => {
+const Home = ({handleClick}) => {
     return (
       <>
-        <Hero />
-        <Card />
+        <Hero  onClick={handleClick} />
         <CardList posts={posts} />
-        <CenteredButton >
+        <CenteredButton  onClick={handleClick}>
           Abra a sua conta
         </CenteredButton>
-        <Institucional />
+        <Institucional  onClick={handleClick} />
         <Faq />
       </>
     )
