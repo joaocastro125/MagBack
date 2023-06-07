@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import Navigation from './components/Navegation';
 import Footer from './components/Footer'
@@ -9,6 +9,7 @@ import './App.css';
 import Home from './views/Home'
 import Login from './views/Login';
 import Dashbord from './views/dashboard';
+import PrivateRoute from './components/PrivateRoute';
 
 
 
@@ -30,9 +31,9 @@ const fakeAuth={
   }
 }
 
-const PrivateRoute = ({ Component, logged}) => {
-  return logged ? <Component name={name} account={account} /> : <Navigate to='/login' />
-}
+// const PrivateRoute = ({ Component, logged}) => {
+//   return logged ? <Component name={name} account={account} /> : <Navigate to='/login' />
+// }
 
   return (
     <div className="App">
@@ -41,7 +42,7 @@ const PrivateRoute = ({ Component, logged}) => {
      <Routes>
         <Route path='/' element={<Home handleClick={()=>setShowModal(true)} />} />
         <Route path='/login' element={<Login auth={fakeAuth} />} />
-        <Route path='/dashbord' element={<Dashbord />} />
+        <Route path='/dashbord' element={<PrivateRoute Component={<Dashbord name={name} account={account}/>} logged={isLogged} />} />
 
         
 
