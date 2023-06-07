@@ -1,0 +1,10 @@
+.footer {
+    border-bottom: 0.2rem solid #f05656;
+  }
+
+  .py-xs-5{
+    margin: 5rem 0;
+    @media screen and (min-width:992px) {
+      margin: 0;
+    }
+  }

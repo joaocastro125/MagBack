@@ -1,0 +1,5 @@
+# PROJETO DE UM BANCO - projeto de curso 
+- TECNOLOGIAS UTILIZADAS 
+- REACT JS 
+- COMO RODAR O PROJETO 
+ - npm start 
