@@ -14,7 +14,7 @@ const Dashbord = () => {
     { date: '15/07', description: 'FARMÁCIA 12125', value: '350,00' },
     { date: '15/07', description: 'FARMÁCIA 12125', value: '350,00' },
   ]
-  const future=[
+  const future = [
     { date: '22/07', description: 'SAQUE 24h 012345', value: '300,00' },
     { date: '21/07', description: 'SUPERMERCADO 02323626', value: '275,00' },
     { date: '20/07', description: 'NETFLIX 235236', value: '30,00' },
@@ -66,7 +66,7 @@ const Dashbord = () => {
 
           <Tabs defaultActiveKey="lastestDeposits">
             <Tab eventKey="latest" title="Útimos lançamentos">
-              <Table striped bordered hover  className="dasboard__table">
+              <Table striped bordered hover className="dasboard__table">
                 <div className="mb-20"></div>
                 <thead>
                   <tr>
