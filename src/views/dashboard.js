@@ -82,12 +82,9 @@ const Dashbord = () => {
                       <td>{description}</td>
                       <td>{value}</td>
 
-
                     </tr>
 
                   ))}
-
-
 
                 </tbody>
               </Table>
@@ -109,13 +106,9 @@ const Dashbord = () => {
                       <td>{description}</td>
                       <td>{value}</td>
 
-
                     </tr>
 
                   ))}
-
-
-
                 </tbody>
               </Table>
 
@@ -128,8 +121,6 @@ const Dashbord = () => {
       </Row>
     </Container>
   )
-
-
 
 }
 
