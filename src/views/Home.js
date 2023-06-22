@@ -9,9 +9,6 @@ import Faq from '../components/Faq';
 import posts from '../data/Posts';
 
 
-
-
-
 const Home = ({handleClick}) => {
     return (
       <>

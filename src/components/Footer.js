@@ -19,7 +19,6 @@ import '../components/Footer.scss'
 
 
 
-
 const Footer = () => {
   return (
     
@@ -38,9 +37,6 @@ const Footer = () => {
         <FontAwesomeIcon  icon={faFacebookSquare} size="2x" color="#7c7c7c" />
         <FontAwesomeIcon icon={faTwitter} size="2x" color="#7c7c7c" />
         <FontAwesomeIcon icon={faYoutube} size="2x" color="#7c7c7c" />
-
-
-
       </Col>
       </Row>
      </Container>

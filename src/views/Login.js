@@ -12,7 +12,7 @@ const Login = ({ text, auth }) => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    auth.login(name, account, navigate('/dashbord'));
+    auth.login(name, account, navigate('/dashboard'));
   };
   return (
 

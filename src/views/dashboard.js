@@ -1,18 +1,17 @@
 
-import {Route,Link, Routes} from "react-router-dom"
-import { faCircle, faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, Container, Row, } from "react-bootstrap";
-import AccountBalance from '../components/AccontBalance';
-import AccountPayments from '../components/Accountpayments'
-import AccountHistory from '../components/AccountHistory'
-
-
-
-import '../views/dashboard.scss'
 import { useState } from "react";
-
-const Dashboard = ({name,className,account}) => {
+import { Link, Routes, Route } from 'react-router-dom';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle, faUser } from "@fortawesome/free-solid-svg-icons";
+import Accountpayments from "../components/Accountpayments";
+import AccountBalance from "../components/AccontBalance";
+import '../views/dashboard.scss';
+import AccountHistory from "../components/AccountHistory";
+const Dashboard = ({ className, name, account }) => {
   const [activeLink, setActiveLink] = useState(0);
 
   const links = [
@@ -77,8 +76,10 @@ const Dashboard = ({name,className,account}) => {
 
         <Col xs={12} lg={10}>
           <Routes>
-            <Route path='/payments' element={<AccountPayments />} />
-            <Route path='/history' element={<AccountHistory data={data} />} />
+          <Route path="/history" element={<AccountHistory data={data} />} />
+          <Route path="/payments" element={<Accountpayments />} />
+
+
             <Route path='/' element={<AccountBalance data={data} />} />
           </Routes>
         </Col>
