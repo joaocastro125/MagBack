@@ -9,3 +9,7 @@
 # rodando o projeto 
 
 npm start 
+
+um projeto de curso do treinamento do imagesholls 
+- meu aprendizado apreendi componetes react-bootstrap
+- eventos no react 
